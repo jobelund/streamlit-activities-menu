@@ -1,0 +1,17 @@
+site_name: Streamlit Activities Menu
+
+theme:
+  name: 'rtd-dropdown'
+
+nav:
+  - index.md
+  - api.md
+
+plugins:
+  - search
+  - mkdocstrings
+  - include-markdown
+
+markdown_extensions:
+  - toc:
+      permalink: true
