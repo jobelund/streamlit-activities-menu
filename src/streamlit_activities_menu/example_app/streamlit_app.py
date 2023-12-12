@@ -11,12 +11,17 @@ st.set_page_config(
 
 
 def run():
+    current_directory = os.getcwd()
+    
+
     LOGO_SIDEBAR_URL = "https://github.com/SITES-spectral/sstc-assets/blob/main/src/sstc_assets/logos/SITES_spectral_LOGO.png?raw=true"
 
     if LOGO_SIDEBAR_URL: st.sidebar.image(
             LOGO_SIDEBAR_URL,             
             caption= 'Swedish Infrastructure for Ecosystem Science (SITES) Spectral'
             )
+        
+    st.write(current_directory)
         
     # Load the available services
     ACTIVITIES_FILEPATH = "./example_app/app_activities.yaml"
