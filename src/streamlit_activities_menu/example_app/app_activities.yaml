@@ -1,0 +1,15 @@
+# Activities for multipage streamlit app
+-
+  name: 'Main'
+  description: 'Main Dashboard'
+  url: "main.py"
+
+-
+  name: 'Map'
+  description: 'Map overview'
+  url: "map.py"
+
+- 
+  name: 'Data processing'
+  description: 'Data Processing'
+  url: "data_processing.py"
