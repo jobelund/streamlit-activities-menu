@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "streamlit-activities-menu"
-version = "0.1.1"
+version = "0.1.2"
 description = ""
 authors = ["Jobelund <124563223+jobelund@users.noreply.github.com>"]
 readme = "README.md"
