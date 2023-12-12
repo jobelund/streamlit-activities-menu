@@ -1,4 +1,5 @@
 # Streamlit Activities Menu
+[Demo in the Streamlit community cloud](https://sidebar-selectbox-menu.streamlit.app/)
 
 Builds an interactive activities menu to create a multi-page app using Streamlit's sidebar selectbox, as an alternative to the `pages` implementation. The available activities (pages) are read from a `yaml` file. These activities can be used to create a multi-page app using Streamlit.
 
