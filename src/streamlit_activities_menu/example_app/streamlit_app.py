@@ -11,8 +11,7 @@ st.set_page_config(
 
 
 def run():
-    current_directory = os.getcwd()
-    
+    working_directory = os.path.dirname(os.path.abspath(__file__))    
 
     LOGO_SIDEBAR_URL = "https://github.com/SITES-spectral/sstc-assets/blob/main/src/sstc_assets/logos/SITES_spectral_LOGO.png?raw=true"
 
@@ -21,11 +20,11 @@ def run():
             caption= 'Swedish Infrastructure for Ecosystem Science (SITES) Spectral'
             )
         
-    st.write(current_directory)
+ 
         
     # Load the available services
-    ACTIVITIES_FILEPATH = "./example_app/app_activities.yaml"
-    ACTIVITIES_DIRPATH = "./example_app/activities/" 
+    ACTIVITIES_FILEPATH = os.path.join(working_directory, "app_activities.yaml")
+    ACTIVITIES_DIRPATH =  os.path.join(working_directory, "activities/" )
 
     # Load the yaml with core services as activities    
     core_activities =  get_available_activities(
